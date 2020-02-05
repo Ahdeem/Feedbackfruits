@@ -1,5 +1,24 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+  <h1 class="text-center">Tic Tac Toe</h1>
+  <div class="board-container">
+    <div class="row">
+      <div class="box text-center" {{action 'markBox' playerOne 'one' 1}}>{{one}}</div>
+      <div class="box text-center" {{action 'markBox' playerOne 'two' 2}}>{{two}}</div>
+      <div class="box text-center" {{action 'markBox' playerOne 'three' 3}}>{{three}}</div>
+    </div>
+    <div class="row">
+      <div class="box text-center" {{action 'markBox' playerOne 'four' 4}}>{{four}}</div>
+      <div class="box text-center" {{action 'markBox' playerOne 'five' 5}}>{{five}}</div>
+      <div class="box text-center" {{action 'markBox' playerOne 'six' 6}}>{{six}}</div>
+    </div>
+    <div class="row">
+      <div class="box text-center" {{action 'markBox' playerOne 'seven' 7}}>{{seven}}</div>
+      <div class="box text-center" {{action 'markBox' playerOne 'eight' 8}}>{{eight}}</div>
+      <div class="box text-center" {{action 'markBox' playerOne 'nine' 9}}>{{nine}}</div>
+    </div>
+  </div>
+
+  <br>
+ 
+
+{{ember-load-remover}}

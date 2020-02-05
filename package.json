@@ -52,5 +52,8 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "@material/top-app-bar": "^4.0.0"
   }
 }
